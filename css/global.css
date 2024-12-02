@@ -1,0 +1,215 @@
+/* Font Definitions */
+@font-face {
+  font-family: "IvyOra Display-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/IvyOraDisplay-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Halyard Text-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/.34695.otf") format("opentype");
+}
+@font-face {
+  font-family: "Halyard Text-Book";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/halyard-display-book.otf") format("opentype");
+}
+@font-face {
+  font-family: "IvyOra Display-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ivyora-display-light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IvyOra Display-LightItalic";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/ivyora-display-light-italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IvyOra Text-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/IvyOraText-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IvyOra Text-LightItalic";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/IvyOraText-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IvyOra Display-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/IvyOraDisplay-Medium.ttf") format("truetype");
+}
+*{
+  font-family: "Halyard Text-Book", sans-serif;
+}
+
+:root {
+    --main-color: #2548C3;
+    --background-light: #FFFAF2;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.logo {
+  display: flex;
+  gap:-10%;
+  font-family: "IvyOra Display-Light", serif;
+  color: var(--main-color);
+  font-size: 32px;
+}
+
+.logo-sub {
+    font-family: "IvyOra Display-LightItalic", serif;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle{
+  border-color: transparent;
+}
+
+.navbar-toggle{
+
+
+}
+
+/* Navbar Links */
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.nav-item a{
+  text-decoration: none;
+  font-family: "Halyard Text-Regular", sans-serif;
+  color: var(--main-color);
+}
+@media only screen and (max-width: 991px) {
+  .nav-item{
+    display:flex;
+    justify-content: center;
+    padding:1em;
+  }
+  .contact-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Hover Effect: Dotted Underline */
+.nav-item a:hover p {
+    border-bottom: 2px dotted var(--main-color);
+    color: var(--main-color);
+}
+
+/* Current Page Effect: Dotted Underline Stays */
+.nav-item a.active::after {
+    border-bottom: 2px dotted var(--main-color);
+}
+
+.contact-btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px / 50%;
+    cursor: pointer;
+    font-family: "Halyard Text-Book", sans-serif;
+    font-size: 16px;
+}
+
+/* General Button Styling */
+button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Halyard Text-Book", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Section Styling */
+section {
+    height: auto;
+    /*padding: 40px 20px;*/
+    background-color: white;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--main-color);
+    margin: 0;
+    width: 100%;
+}
+body, main, section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Titles */
+h2 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 56px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Halyard Text-Book", sans-serif;
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+/*footer */
+footer{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footertext{
+  width:100%;
+  color:white;
+  text-align: center;
+}
+
+a:hover{
+  text-decoration: dotted;
+  text-decoration-color: var(--main-color);
+}
+

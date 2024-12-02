@@ -1,0 +1,138 @@
+img{
+    width:100%;
+}
+/* General Section Styling */
+.section {
+    padding: 5%;
+
+}
+
+
+.italic {
+    font-family: "IvyOra Display-LightItalic", serif;
+    font-style: italic;
+}
+
+
+/* Alternating Background Colors */
+.white-background {
+    background-color: white;
+}
+
+.beige-background {
+    background-color: #FFF9EF;
+}
+
+/* Two-Column Layout */
+
+
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+
+.text-column p {
+    color: black;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Carousel Styling */
+.carousel-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* Horizontal Scrolling Cards */
+.horizontal-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+
+}
+/* Customize the scrollbar */
+.project-cards::-webkit-scrollbar {
+    height: 10px;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); /* Navy blue scrollbar */
+    border-radius: 10px;
+}
+
+.project-cards::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.card {
+    display:flex;
+    gap:1em;
+    max-width: 30%;
+    min-width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .card{
+        max-width: 60%;
+        min-width: 60%;     
+    }
+}
+
+.card h3 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.card p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-images {
+    display: flex;
+    gap: 1%;
+    width:100%;
+}
+
+.card-images img {
+    width:33.33%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Customize the scrollbar */
+.horizontal-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); /* Navy blue scrollbar */
+    border-radius: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}

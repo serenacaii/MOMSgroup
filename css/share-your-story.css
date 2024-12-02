@@ -1,0 +1,194 @@
+
+:root {
+    --main-color: #2548C3;
+    --background-light: #FFFAF2;
+}
+/* Images */
+img{
+    width:100%;
+}
+/* Page Header */
+.page-header {
+    text-align: left;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 56px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.page-header p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+
+}
+
+.italic {
+    font-family: "IvyOra Display-LightItalic", serif;
+    font-style: italic;
+}
+
+
+/* Section 1: Story Input and Responses */
+.story-items{
+    display: flex;
+}
+.story-input-section {
+    background-color: white;
+}
+
+
+.story-box {
+    background-color: var(--main-color);
+    width:100%;
+    color: white;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: left;
+}
+
+.story-box h3 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.story-box p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.story-box textarea {
+    width: 95%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-family: "Halyard Text-Regular", sans-serif;
+    margin-bottom: 20px;
+}
+
+.story-box button {
+    background-color: white;
+    color: var(--main-color);
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px / 50%;
+    cursor: pointer;
+}
+
+.response-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    width: 90%;
+}
+.twoCard{
+    display: flex;
+    gap:1.5em;
+}
+
+/* Customize the scrollbar */
+.response-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.response-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); /* Navy blue scrollbar */
+    border-radius: 10px;
+}
+
+.response-scroll::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.response-card {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height:100%;
+    background-color: #FFF9EF;
+    border-radius: 10px;
+    padding: 20px;
+    
+    text-align: left;
+    font-family: "Halyard Text-Regular", sans-serif;
+}
+
+.join-group{
+    margin-top: auto;
+}
+
+.storySection{
+    padding-top: 5em;
+    padding-bottom: 8em;
+    width:80%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+
+}
+.response-card h4 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+/* Section 2 and 3: Info Sections */
+.info-section {
+    height: auto; /* Remove fixed height */
+    background-color: var(--background-light);
+    padding: 5em 2em;
+}
+
+.info-section-2 {
+    height: auto; /* Remove fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5em 2em;
+}
+
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 36px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.text-content button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px / 50%;
+    border: none;
+    cursor: pointer;
+}
+

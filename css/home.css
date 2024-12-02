@@ -1,0 +1,395 @@
+
+
+/* Section 1 */
+.section-1 {
+    display: flex;
+    height: 880px;
+}
+
+.left-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-column {
+    flex: 1;
+    padding: 144px;
+    margin-top: 0px;
+}
+
+.right-column h1 {
+    font-family: "IvyOra Display-Light", serif;
+    font-size: 48px;
+    color: var(--main-color);
+    font-weight: 300;
+
+}
+
+.italic {
+    font-family: "IvyOra Display-LightItalic", serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.subheading {
+    margin-top: 150px;
+    color: black;
+}
+
+/* Section 2 Title and Tagline */
+.section-2 h2 {
+    margin-top: 160px;
+    margin-left: 160px;
+}
+
+.tagline {
+    margin-left: 160px;
+    font-family: "IvyOra Display-Light", serif;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 70px;
+}
+
+/* Interactive Columns */
+.interactive-columns {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-left: 160px;
+}
+
+/* Column Boxes */
+.column {
+    width: 425px;
+    height: 425px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* First Box */
+.column:first-child {
+    background-color: var(--main-color);
+}
+
+.column:first-child h3 {
+    font-family: "IvyOra Display-Regular", serif;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+/* First Box Buttons */
+.range-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 20px;
+}
+
+.column:first-child .range-buttons button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    font-family: "IvyOra Text-Light", serif;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover Effect */
+.column:first-child .range-buttons button:hover  {
+    background-color: white;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* Text Under Buttons */
+.range-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: "Halyard Text-Book", serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Second and Third Boxes */
+.column:nth-child(2),
+.column:nth-child(3) {
+    background-color: #FFF9EF; /* Light background */
+}
+
+/* Headings in Second and Third Boxes */
+.column:nth-child(2) h3,
+.column:nth-child(3) h3 {
+    font-family: "IvyOra Display-Regular", serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+/* Response Input Boxes */
+.column input {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Halyard Text-Book", sans-serif;
+    color: var(--main-color);
+}
+
+.column input::placeholder {
+    color: #999;
+}
+
+/* Submit Button */
+.column button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px / 50%;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Halyard Text-Book", sans-serif;
+    font-size: 16px;
+}
+
+/* Section 3: Daily Affirmations */
+.section-3 {
+    background-color: var(--background-light);
+    display: flex;
+    align-items: flex-start;
+    padding: 60px 20px;
+    gap: 10px;
+}
+
+.section-3 .image-row {
+    display: flex;
+    gap: 20px;
+    flex: 2;
+    margin-top: 140px;
+    margin-left: 170px;
+}
+
+.section-3 .image-card {
+    text-align: center;
+    font-family: "IvyOra Display-Medium", serif;
+    color: var(--main-color);
+    width: 220px;
+}
+
+.section-3 .image-card .date {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.section-3 .image-card .day {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.section-3 .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-3 .text-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 145px;
+}
+
+.section-3 .text-area h2 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 48px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    margin-top: 250px;
+}
+
+.section-3 .text-area p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.section-3 .join-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px / 50%;
+    border: none;
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Section 4: Legacy Projects */
+
+.section-4 {
+    padding: 60px 20px;
+
+}
+
+.section-4 h2 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 48px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
+.descrip p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 100px;
+    margin-left: 180px;
+}
+
+.project-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Customize the scrollbar */
+.project-cards::-webkit-scrollbar {
+    height: 10px;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); /* Navy blue scrollbar */
+    border-radius: 10px;
+}
+
+.project-cards::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.project-cards .card {
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px;
+    text-align: left;
+    font-family: "Halyard Text-Regular", sans-serif;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+}
+
+.project-cards .card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-cards .card h3 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 24px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project-cards .card button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px / 50%;
+    border: none;
+    cursor: pointer;
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Section 5: Receive Support */
+.section-5 {
+    background-color: var(--background-light);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-5 h2 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 32px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.section-5 p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 16px;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.advisor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.advisor-cards .card {
+    width: 380px;
+    height: auto;
+    text-align: left;
+    font-family: "Halyard Text-Regular", sans-serif;
+    background: none;
+    border: none;
+}
+
+.advisor-cards .card .placeholder {
+    width: 380px;
+    height: 380px;
+    background: gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.advisor-cards .card h3 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 24px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.advisor-cards .card p {
+    font-family: "Halyard Text-Regular", sans-serif;
+    font-size: 14px;
+    color: black;
+}

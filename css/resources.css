@@ -1,0 +1,176 @@
+/* General Section Styling */
+.section {
+    height:auto; 
+    padding: 5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.beige-background {
+    background-color: #FFF9EF;
+}
+
+img{
+    width:100%;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+}
+
+
+button.whitebutton {
+    margin-top: auto;
+    background-color: var(--main-color);
+    color:white ;
+    border: 2px solid white;
+}
+
+.whitebutton > a:hover{
+    color:white;
+}
+/* Title Section */
+.title-container {
+    text-align: center;
+    width: 70%;
+}
+.titlesection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+h1 {
+    font-family: "IvyOra Display-Medium", serif;
+    font-size: 48px;
+    color: var(--main-color);
+}
+
+
+.small {
+  font-size: 24px;
+}
+
+.big{
+    font-family: "IvyOra Text-Light", serif;
+    font-size: 34px;
+}
+
+/* Cards Section */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.card {
+    background-color: var(--main-color);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: "Halyard Text-Book", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    flex: 1;
+}
+
+/* Two-Column Layout */
+.two-column {
+    display: flex;
+    gap: 40px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.text-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h3 {
+
+    font-family: "Halyard Text-Book", sans-serif;
+    color: black;
+
+}
+
+section p{
+    font-family: "Halyard Text-Book", sans-serif;
+    color: black;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.resource-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.resource-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.resource-card .text-column {
+    flex: 2;
+}
+
+.resource-card .image-container {
+    flex: 1;
+}
+
+/* Form Section */
+
+.form-info{
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Halyard Text-Regular", sans-serif;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Halyard Text-Regular", sans-serif;
+}
+
+/*resources section*/
+.resourceicon{
+    width:100%;
+}
